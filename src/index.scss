@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;600&display=swap');
+
+@mixin flexi-font--normal {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+}
+
+@mixin flexi-font--bold {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+}
+
+@mixin flexi-font--light {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+}
+
+:root {
+  @include flexi-font--normal
+}
+
+.flexi-layout {
+  margin: auto 2em;
+
+  &__fluid {
+    margin: auto 5em;
+  }
+}
+
+.flexi-button {
+  border-radius: 17px;
+  padding: 0.5rem;
+  border-color: none;
+  font-weight: 600;
+
+  &--primary {
+    background-color: #EB5C54;
+    border: #EB5C54 1px solid;
+  }
+
+  &--secondary {
+    background-color: #4890a8;
+    border: #4890a8 1px solid;
+  }
+
+  &--light {
+    background-color: #eaf3f6;
+    border: #eaf3f6 1px solid;
+  }
+}
+
+.flexi-hero-text {
+  font-size: 50px;
+}
