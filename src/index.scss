@@ -32,20 +32,47 @@
   padding: 0.5rem;
   border-color: none;
   font-weight: 600;
+  color: #fff6f6;
 
   &--primary {
     background-color: #EB5C54;
     border: #EB5C54 1px solid;
+
+    &:hover {
+      background-color: #e93e34;
+      border: #e93e34 1px solid;
+    }
   }
 
   &--secondary {
     background-color: #4890a8;
     border: #4890a8 1px solid;
+
+    &:hover {
+      background-color: #37768a;
+      border: #37768a 1px solid;
+    }
+  }
+
+  &--dark {
+    background-color: #212529;
+    border: #212529 1px solid;
+
+    &:hover {
+      background-color: #35383c;
+      border: #35383c 1px solid;
+    }
   }
 
   &--light {
     background-color: #eaf3f6;
     border: #eaf3f6 1px solid;
+    color: #000;
+
+    &:hover {
+      background-color: #d4eaf1;
+      border: #d4eaf1 1px solid;
+    }
   }
 }
 
